@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require "rails_auto_erd"
+require("rails_auto_erd")
+require("rails_auto_erd/cli")
 require("byebug")
 
 RSpec.configure do |config|

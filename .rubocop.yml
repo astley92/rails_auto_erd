@@ -25,3 +25,9 @@ Gemspec/RequireMFA:
 
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
