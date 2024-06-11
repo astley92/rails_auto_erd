@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require("rails_auto_erd")
+require("rails_auto_erd/cli")
+
+RailsAutoErd::CLI.new.run
