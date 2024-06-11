@@ -44,11 +44,11 @@ BuildOutputString --> SendStringToOutput
 
 # MVP TODO
 
-- [ ] Rake setup
-  - [ ] Build
-  - [ ] Install
-  - [ ] Clean
-  - [ ] Run
+- [x] Rake setup
+  - [x] Build
+  - [x] Install
+  - [x] Clean
+  - [x] Run
 - [ ] Cli command Generate
 - [ ] Precheck Rails Project
 - [ ] Precheck ORM
