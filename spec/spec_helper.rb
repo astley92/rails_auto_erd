@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "rails_auto_erd"
+require("byebug")
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
