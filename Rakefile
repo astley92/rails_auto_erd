@@ -14,12 +14,12 @@ task default: %i[spec rubocop]
 
 desc "Build the gem"
 task :build do
-  sh "gem build rails_auto_erd.gemspec"
+  sh "gem build rails_auto_erd.gemspec -V"
 end
 
 desc "Install the gem"
 task install: %i[build] do
-  sh "gem install rails_auto_erd-#{RailsAutoErd::VERSION}.gem"
+  sh "gem install rails_auto_erd-#{RailsAutoErd::VERSION}.gem -V -l"
 end
 
 desc "Run the gem"
