@@ -39,3 +39,9 @@ RSpec/MessageSpies:
 
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+RSpec/ExampleLength:
+  Enabled: false
