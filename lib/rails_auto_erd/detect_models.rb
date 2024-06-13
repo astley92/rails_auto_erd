@@ -13,7 +13,7 @@ module RailsAutoErd
     end
 
     def self.build_model(klass)
-      Model.new(name: klass.name, table_name: klass.table_name)
+      Model.new(name: klass.name, table_name: klass.table_name, klass:)
     end
     private_class_method :build_model
   end

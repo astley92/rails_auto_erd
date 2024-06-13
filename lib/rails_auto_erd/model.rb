@@ -2,17 +2,18 @@
 
 module RailsAutoErd
   class Model
-    def initialize(name:, table_name:)
+    def initialize(name:, table_name:, klass:)
       @name = name
       @table_name = table_name
+      @klass = klass
     end
 
     def ==(other)
-      name == other.name && table_name == other.table_name
+      klass == other.klass
     end
 
     protected
 
-    attr_reader :name, :table_name
+    attr_reader :klass
   end
 end

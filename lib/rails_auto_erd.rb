@@ -5,7 +5,13 @@ require_relative("rails_auto_erd/detect_models")
 module RailsAutoErd
   class Error < StandardError; end
 
+  RAILS_ENV_FILEPATH = "config/environment.rb"
+
   def self.execute
-    model_definition = DetectModels.call
+    filepath = File.join(Dir.pwd, RAILS_ENV_FILEPATH)
+
+    require(filepath)
+
+    DetectModels.call
   end
 end
