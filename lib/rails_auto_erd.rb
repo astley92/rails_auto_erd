@@ -2,6 +2,7 @@
 
 require_relative("rails_auto_erd/detect_models")
 require_relative("rails_auto_erd/detect_relations")
+require_relative("rails_auto_erd/formatters/mermaid_js")
 
 module RailsAutoErd
   class Error < StandardError; end
@@ -14,6 +15,8 @@ module RailsAutoErd
     Rails.application.eager_load!
 
     models = DetectModels.call
-    DetectRelations.call(models)
+    relations = DetectRelations.call(models)
+
+    puts Formatters::MermaidJS.to_s(models, relations)
   end
 end

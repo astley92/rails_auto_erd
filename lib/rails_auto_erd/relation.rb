@@ -16,5 +16,11 @@ module RailsAutoErd
         to_model == other.to_model &&
         type == other.type
     end
+
+    def is_inverse_of?(other)
+      other.is_a?(self.class) &&
+        from_model == other.to_model &&
+        to_model == other.from_model
+    end
   end
 end
