@@ -51,3 +51,6 @@ RSpec/MultipleExpectations:
 
 Metrics/MethodLength:
   Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false

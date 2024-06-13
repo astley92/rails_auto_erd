@@ -11,7 +11,7 @@ RSpec.describe RailsAutoErd do
     subject(:execute) { described_class.execute }
 
     it "builds an internal representation of the model setup" do
-      expect(described_class::DetectModels).to receive(:call)
+      expect(described_class::DetectModels).to receive(:call).and_call_original
 
       execute
     end

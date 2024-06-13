@@ -32,7 +32,7 @@ RSpec.describe RailsAutoErd::Formatters::MermaidJS do
     it "returns the expected string" do
       expect(result).to eq(<<~MERMAID)
         erDiagram
-          USER }o--|{ ACCOUNT
+          "USER" }o--|{ "ACCOUNT": ""
       MERMAID
     end
   end

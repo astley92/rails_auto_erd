@@ -17,6 +17,6 @@ module RailsAutoErd
     models = DetectModels.call
     relations = DetectRelations.call(models)
 
-    puts Formatters::MermaidJS.to_s(models, relations)
+    puts RailsAutoErd::Formatters::MermaidJS.call(models, relations)
   end
 end

@@ -10,6 +10,8 @@ module RailsAutoErd
       models.each do |model|
         associations = model.klass.reflect_on_all_associations
         associations.each do |association|
+          next if association.polymorphic?
+
           res << RailsAutoErd::Relation.new(
             from_model: model,
             to_model: RailsAutoErd::Model.from_class(association.klass),
