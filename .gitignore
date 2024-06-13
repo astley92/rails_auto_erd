@@ -12,3 +12,4 @@
 rails_auto_erd*.gem
 
 .byebug_history
+spec/dummy/log
