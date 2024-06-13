@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative("rails_auto_erd/detect_models")
+require_relative("rails_auto_erd/detect_relations")
 
 module RailsAutoErd
   class Error < StandardError; end
@@ -12,6 +13,7 @@ module RailsAutoErd
     require(filepath)
     Rails.application.eager_load!
 
-    DetectModels.call
+    models = DetectModels.call
+    DetectRelations.call(models)
   end
 end

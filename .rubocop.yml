@@ -45,3 +45,9 @@ Layout/MultilineMethodCallIndentation:
 
 RSpec/ExampleLength:
   Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
