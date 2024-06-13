@@ -5,7 +5,6 @@ require_relative("model")
 module RailsAutoErd
   module DetectModels
     def self.call
-      Rails.application.eager_load!
       ActiveRecord::Base
         .descendants
         .reject(&:abstract_class?)

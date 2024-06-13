@@ -9,8 +9,8 @@ module RailsAutoErd
 
   def self.execute
     filepath = File.join(Dir.pwd, RAILS_ENV_FILEPATH)
-
     require(filepath)
+    Rails.application.eager_load!
 
     DetectModels.call
   end
