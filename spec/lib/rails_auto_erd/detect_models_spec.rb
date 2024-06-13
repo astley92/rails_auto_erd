@@ -16,6 +16,11 @@ RSpec.describe RailsAutoErd::DetectModels do
           klass: User
         ),
         RailsAutoErd::Model.new(
+          name: "Account",
+          table_name: "accounts",
+          klass: Account
+        ),
+        RailsAutoErd::Model.new(
           name: "ActionText::RichText",
           table_name: "action_text_rich_texts",
           klass: ActionText::RichText
