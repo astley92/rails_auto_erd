@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   # spec.add_dependency "example-gem", "~> 1.0"
 
   spec.add_development_dependency "byebug", "~> 11.1.3"
+  spec.add_development_dependency "pg", "~> 1.2"
+  spec.add_development_dependency "rails", "~> 7.1.0"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec-rails", "~> 6.1.2"
   spec.add_development_dependency "rubocop", "~> 1.21"
