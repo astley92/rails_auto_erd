@@ -2,9 +2,14 @@ require:
   - rubocop-rake
   - rubocop-rspec
 
+
+
 AllCops:
   TargetRubyVersion: 3.2
   NewCops: enable
+  Exclude:
+    - "spec/dummy/**/*"
+    - "exe/**/*"
 
 Style/StringLiterals:
   Enabled: true
