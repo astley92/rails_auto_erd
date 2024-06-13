@@ -4,7 +4,7 @@ require_relative("model")
 
 module RailsAutoErd
   module DetectModels
-    def self.execute
+    def self.call
     end
   end
 end

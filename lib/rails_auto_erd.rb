@@ -6,6 +6,6 @@ module RailsAutoErd
   class Error < StandardError; end
 
   def self.execute
-    model_definition = DetectModels.execute
+    model_definition = DetectModels.call
   end
 end
